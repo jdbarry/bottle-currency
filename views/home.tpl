@@ -7,7 +7,7 @@
     <link type="text/css" rel="stylesheet" href="/static/style.css">
   </head>
   <body>
-    <h1>Currency Converter</h1>
+    <h1>Currency Converter - Stackato 3.2</h1>
     <div class="container">
       <div class="block left">
 	<form class="currency" action="#">
