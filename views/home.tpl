@@ -7,7 +7,7 @@
     <link type="text/css" rel="stylesheet" href="/static/style.css">
   </head>
   <body>
-    <h1>Data Pre-Aggregation</h1>
+    <h1>Matt's App</h1>
     <div class="container">
       <div class="block left">
 	<form class="currency" action="#">
