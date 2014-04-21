@@ -32,7 +32,7 @@ log.setLevel(logging.DEBUG)
 url = urlparse.urlparse(os.environ['REDIS_URL'])
 rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
 
-# Last updated by M. Fink 4/21/2014
+# Last updated by 4/21/2014
 def currencies(db=[]):
     if not db:
         with open("currencies.dat", 'r') as f:
