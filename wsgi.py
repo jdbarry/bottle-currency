@@ -32,12 +32,13 @@ log.setLevel(logging.DEBUG)
 url = urlparse.urlparse(os.environ['REDIS_URL'])
 rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
 
+# Last updated by M. Fink 4/21/2014
 def currencies(db=[]):
     if not db:
         with open("currencies.dat", 'r') as f:
             for line in f.readlines():
                 symbol, title = line.strip().split("\t", 1)
-                db.append((symbol, title)))
+                db.append((symbol, title))
     return db
 
 class ConnectionError(Exception): pass
