@@ -38,7 +38,7 @@ def currencies(db=[]):
         with open("currencies.dat", 'r') as f:
             for line in f.readlines():
                 symbol, title = line.strip().split("\t", 1)
-                db.append((symbol, title))
+                db.append((symbol, title)))
     return db
 
 class ConnectionError(Exception): pass
