@@ -16,14 +16,6 @@ from bottle import route
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
 SERVICE_URL = "http://www.sann-gmbh.com/currencyapi/"
-# Mirrors: # status as of Mar2013
-#   Working...
-#     http://www.sann-gmbh.com/currencyapi/
-#     http://financy.dbeuchert.com/
-#   Not working...
-#     http://www.lennart-moltrecht.com/apps/currencyapi/
-#     http://tp1.com.ar/currency/
-#     http://static.hattrick-youthclub.org/currency/
 
 logging.basicConfig()
 log = logging.getLogger('bottle-currency')
@@ -32,13 +24,13 @@ log.setLevel(logging.DEBUG)
 url = urlparse.urlparse(os.environ['REDIS_URL'])
 rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
 
-# Last updated by 4/21/2014
+# Last updated by M. Fink - 4/21/2014
 def currencies(db=[]):
     if not db:
         with open("currencies.dat", 'r') as f:
             for line in f.readlines():
                 symbol, title = line.strip().split("\t", 1)
-                db.append((symbol, title)))
+                db.append((symbol, title))
     return db
 
 class ConnectionError(Exception): pass
