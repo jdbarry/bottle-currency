@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Acme Healthcare</title>
+    <title>Acme Healthcare (0.4)</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"> 
     <link type="text/css" rel="stylesheet" href="/static/style.css">
