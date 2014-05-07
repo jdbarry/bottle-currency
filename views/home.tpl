@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Currency Converter</title>
+    <title>Acme Healthcare</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"> 
     <link type="text/css" rel="stylesheet" href="/static/style.css">
   </head>
   <body>
-    <h1>Demo App - v2</h1>
+    <h1>Acme Healthcare - Find a Doctor</h1>
     <div class="container">
       <div class="block left">
 	<form class="currency" action="#">
-	  <span class="symbol"></span>
 	  <input type="text" name="amount" value="">
 	</form>
 	<div class="currency-list">
@@ -39,9 +38,6 @@
       </div>
     </div>
     <div class="error"></div>
-    <a class="branding"
-       href="http://www.activestate.com/cloud"
-       title="Powered by Stackato">&nbsp;</a>
     <script type="text/javascript" src="/static/jquery-1.6.1.min.js"></script>
     <script type="text/javascript" src="/static/main.js"></script>
 </html>
