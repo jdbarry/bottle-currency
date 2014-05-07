@@ -15,7 +15,7 @@ from bottle import route
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
-SERVICE_URL = "http://www.sann-gmbh.com/currencyapi/"
+SERVICE_URL = "http://www.sann-gmbh.com/currencyapi-v2/"
 
 logging.basicConfig()
 log = logging.getLogger('bottle-currency')
@@ -75,7 +75,7 @@ def get_rate(src, dst):
             time.sleep(1) # recoverable, retry after 1 sec
         except:
             log.exception("Unexpected error")
-            raise # non-revocerable 
+            raise # non-recoverable
     raise # the 3rd connection error
 
 @route('/static/:filename')
