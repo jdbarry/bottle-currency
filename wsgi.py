@@ -84,21 +84,14 @@ def serve_static(filename):
 
 @route('/login')
 def login():
-    return '''
-        <form action="/login" method="post">
-            Username: <input name="username" type="text" />
-            Password: <input name="password" type="password" />
-            <input value="Login" type="submit" />
-        </form>
-    '''
+    return bottle.template('login')
 
 @route('/login', method='POST')
 def do_login():
     username = request.forms.get('username')
     password = request.forms.get('password')
-    if username == 'josh':
-        return "<p>Welcome, Josh.</p>" \
-               "<p><a href='doctor'>Find a Doctor</a></p>"
+    if username == 'billh':
+        return bottle.template('authenticated')
     else:
         return "<p>Login failed.</p>"
 
