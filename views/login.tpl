@@ -23,6 +23,7 @@
 <input name="username" type="text" id="regularInput" />
 <label for="regularInput">Password</label>
 <input name="password" type="password" id="regularInput" />
+<p><a href="">Forgot password?</a></p>
 <button value="Login" type="submit">Log in</button>
 </form>
 </div>
