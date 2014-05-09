@@ -31,7 +31,7 @@
 <h3>Leona J. Smith, MD</h3>
 <div class="adr">
 Primary Family Care<br>
-Distance: 1.9 mi<br>
+Distance: 1.9 mi<br><br>
 </div>
 <label for="regularTextarea">Reason for Visit</label>
 <textarea id="regularTextarea"></textarea>
@@ -39,9 +39,10 @@ Distance: 1.9 mi<br>
 <input id="datepicker" />
 <label for="selectList">Available Openings</label>
 <select id="selectList">
-<option value="Option 1">8:00 a.m.</option>
-<option value="Option 2">12:30 p.m.</option>
-<option value="Option 3">3:00 p.m.</option>
+<option value="Option 1">--</option>
+<option value="Option 2">8:00 a.m.</option>
+<option value="Option 3">12:30 p.m.</option>
+<option value="Option 4">3:00 p.m.</option>
 </select>
 <button value="Schedule" type="submit">Book Appointment</button>
 </form>
