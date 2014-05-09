@@ -95,6 +95,19 @@ def do_login():
     else:
         return "<p>Login failed.</p>"
 
+@route('/find')
+def find():
+    return bottle.template('find')
+
+@route('/find', method='POST')
+def do_find():
+    zip = request.forms.get('zip')
+    name = request.forms.get('name')
+    if zip == '98126':
+        return bottle.template('results')
+    else:
+        return "<p>No results found. Please try again.</p>"
+
 application = bottle.app()
 application.catchall = False
 

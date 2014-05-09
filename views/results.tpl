@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/static/skeleton.css">
 <link rel="stylesheet" href="/static/layout.css">
 <title>Acme Healthcare</title>
-    <style>
+<style>
     .container h2, .container img {
     display: inline;
     vertical-align: middle;
@@ -14,18 +14,24 @@
 </head>
 <body>
 <div class="container">
-<img src="/static/icon.png" width="40">
-<h2>Acme Healthcare</h2>
+<img width="40" src="/static/icon.png">
+<h2>Acme Healthcare</h2><br><br>
 <div style="padding-left:45px;">
-<h3>Member Login</h3>
-<form action="/login" method="post">
-<label for="regularInput">Username</label>
-<input name="username" type="text" id="regularInput" />
-<label for="regularInput">Password</label>
-<input name="password" type="password" id="regularInput" />
-<button value="Login" type="submit">Log in</button>
-</form>
+<h3>Results for 98126</h3>
+
+
+<div class="info">
+<div class="content">
+<div class="address">
+<h3>Leona J. Smith</h3>
+<div class="adr">
+2137 Star Route<br>Tinley Park, IL 98126
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="error"></div>
 </div>
 </body>
 </html>
