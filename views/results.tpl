@@ -18,19 +18,62 @@
 <h2>Acme Healthcare</h2><br><br>
 <div style="padding-left:45px;">
 <h3>Results for 98126</h3>
-
+<br>
 
 <div class="info">
 <div class="content">
 <div class="address">
 <h3>Leona J. Smith</h3>
 <div class="adr">
-2137 Star Route<br>Tinley Park, IL 98126
+2137 Star Route<br>Tinley Park, IL 98126<br>
+<label for="regularInput">Schedule Appointment</label>
+<input name="appointment" type="text" id="regularInput" />
+<label for="regularInput">Map</label>
+<input name="map" type="text" id="regularInput" />
+<label for="regularInput">Call</label>
+<input name="call" type="text" id="regularInput" />
 </div>
 </div>
 </div>
 </div>
+
+<div class="info">
+<div class="content">
+<div class="address">
+<h3>Leona J. Smith</h3>
+<div class="adr">
+2137 Star Route<br>Tinley Park, IL 98126<br>
+<label for="regularInput">Schedule Appointment</label>
+<input name="appointment" type="text" id="regularInput" />
+<label for="regularInput">Map</label>
+<input name="map" type="text" id="regularInput" />
+<label for="regularInput">Call</label>
+<input name="call" type="text" id="regularInput" />
 </div>
+</div>
+</div>
+</div>
+
+<div class="info">
+<div class="content">
+<div class="address">
+<h3>Leona J. Smith</h3>
+<div class="adr">
+2137 Star Route<br>Tinley Park, IL 98126<br>
+<label for="regularInput">Schedule Appointment</label>
+<input name="appointment" type="text" id="regularInput" />
+<label for="regularInput">Map</label>
+<input name="map" type="text" id="regularInput" />
+<label for="regularInput">Call</label>
+<input name="call" type="text" id="regularInput" />
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
 <div class="error"></div>
 </div>
 </body>
