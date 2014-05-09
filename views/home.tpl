@@ -8,16 +8,19 @@
 <style>
     .container h2, .container img {
     display: inline;
+    vertical-align: middle;
 }
   </style>
 </head>
 <body>
 <div class="container">
-<img src="/static/icon.png" width="80">
-<h2>Acme Healthcare</h2>
-<a href="/login" class="button">Member Login</a>
-<a href="/find" class="button">Find a Doctor</a>
+<img width="40" src="/static/icon.png">
+<h2>Acme Healthcare</h2><br><br>
+<div style="padding-left:45px;">
+<a href="/login" class="button">Member Login</a><br>
+<a href="/find" class="button">Find a Doctor</a><br>
 <a href="/shop" class="button">Shop for Coverage</a>
+</div>
 <div class="error"></div>
 </div>
 </body>

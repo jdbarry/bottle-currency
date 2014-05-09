@@ -8,13 +8,15 @@
     <style>
     .container h2, .container img {
     display: inline;
+    vertical-align: middle;
 }
   </style>
 </head>
 <body>
 <div class="container">
-<img src="/static/icon.png" width="80">
+<img src="/static/icon.png" width="40">
 <h2>Acme Healthcare</h2>
+<div style="padding-left:45px;">
 <h3>Member Login</h3>
 <form action="/login" method="post">
 <label for="regularInput">Username</label>
@@ -26,6 +28,7 @@
 Password: <input name="password" type="password" />
 <input value="Login" type="submit" /> -->
 </form>
+</div>
 </div>
 </body>
 </html>
