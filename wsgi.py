@@ -123,7 +123,7 @@ def do_schedule():
         log.exception("http error")
         raise ConnectionError("Can't communicate upstream server")
     else:
-        return "<p>Reservation successful.</p>"
+        return "<p>Reservation successful! [add details here]</p>"
 
 
 application = bottle.app()
