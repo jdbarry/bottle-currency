@@ -15,7 +15,8 @@ from bottle import get, post, request, route
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
-SERVICE_URL = "http://www.sann-gmbh.com/currencyapi-v2/"
+# Last updated by M. Fink
+SERVICE_URL = "http://www.sann-gmbh.com/currencyapi/"
 
 logging.basicConfig()
 log = logging.getLogger('bottle-currency')
@@ -24,7 +25,6 @@ log.setLevel(logging.DEBUG)
 url = urlparse.urlparse(os.environ['REDIS_URL'])
 rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
 
-# Last updated by M. Fink
 def currencies(db=[]):
     if not db:
         with open("currencies.dat", 'r') as f:
