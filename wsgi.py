@@ -16,7 +16,7 @@ from bottle import get, post, request, route
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
 # Last updated by M. Fink
-SERVICE_URL = "http://www.sann-gmbh.com/currencyapi/"
+SERVICE_URL = "http://www.sann-gmbh.com/currencyapi-beta/"
 
 logging.basicConfig()
 log = logging.getLogger('bottle-currency')
