@@ -15,7 +15,7 @@
 <body>
 <div class="container">
 <img src="/static/icon.png" width="40">
-<h2>Acme Healthcare</h2>
+<h2>Acme Healthcare - Friday Test</h2>
 <div style="padding-left:45px;">
 <h3>Member Login</h3>
 <form action="/login" method="post">
