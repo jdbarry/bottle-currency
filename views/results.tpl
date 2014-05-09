@@ -26,12 +26,23 @@
 <h3>Leona J. Smith</h3>
 <div class="adr">
 2137 Star Route<br>Tinley Park, IL 98126<br>
-<label for="regularInput">Schedule Appointment</label>
-<input name="appointment" type="text" id="regularInput" />
-<label for="regularInput">Map</label>
-<input name="map" type="text" id="regularInput" />
-<label for="regularInput">Call</label>
-<input name="call" type="text" id="regularInput" />
+<a href="/schedule" class="button">Schedule an Appointment</a><br>
+<a href="/map" class="button">Map & Directions</a><br>
+<a href="/call" class="button">Call</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="info">
+<div class="content">
+<div class="address">
+<h3>Leona J. Smith</h3>
+<div class="adr">
+2137 Star Route<br>Tinley Park, IL 98126<br>
+<a href="/schedule" class="button">Schedule an Appointment</a><br>
+<a href="/map" class="button">Map & Directions</a><br>
+<a href="/call" class="button">Call</a>
 </div>
 </div>
 </div>
@@ -44,15 +55,14 @@
 <div class="adr">
 2137 Star Route<br>Tinley Park, IL 98126<br>
 <label for="regularInput">Schedule Appointment</label>
-<input name="appointment" type="text" id="regularInput" />
-<label for="regularInput">Map</label>
-<input name="map" type="text" id="regularInput" />
-<label for="regularInput">Call</label>
-<input name="call" type="text" id="regularInput" />
+<a href="/schedule" class="button">Schedule an Appointment</a><br>
+<a href="/map" class="button">Map & Directions</a><br>
+<a href="/call" class="button">Call</a>
 </div>
 </div>
 </div>
 </div>
+
 
 <div class="info">
 <div class="content">
@@ -61,11 +71,9 @@
 <div class="adr">
 2137 Star Route<br>Tinley Park, IL 98126<br>
 <label for="regularInput">Schedule Appointment</label>
-<input name="appointment" type="text" id="regularInput" />
-<label for="regularInput">Map</label>
-<input name="map" type="text" id="regularInput" />
-<label for="regularInput">Call</label>
-<input name="call" type="text" id="regularInput" />
+<a href="/schedule" class="button">Schedule an Appointment</a><br>
+<a href="/map" class="button">Map & Directions</a><br>
+<a href="/call" class="button">Call</a>
 </div>
 </div>
 </div>
