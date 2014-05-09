@@ -114,12 +114,16 @@ def schedule():
 
 @route('/schedule', method='POST')
 def do_schedule():
-    zip = request.forms.get('zip')
-    name = request.forms.get('name')
-    if zip == '98126':
-        return bottle.template('results')
+    try:
+        urllib2.urlopen(url)
+    except urllib2.URLError:
+        log.exception("url error")
+        raise ConnectionError("Can't connect upstream server")
+    except urllib2.HTTPError:
+        log.exception("http error")
+        raise ConnectionError("Can't communicate upstream server")
     else:
-        return "<p>There was an error communicating with the reservation system. Please try again later.</p>"
+        return "<p>Reservation successful.</p>"
 
 
 application = bottle.app()
