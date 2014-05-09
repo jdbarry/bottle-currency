@@ -11,7 +11,7 @@ import urllib2
 import urlparse
 import contextlib
 
-from bottle import route
+from bottle import get, post, request, route
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
@@ -24,7 +24,7 @@ log.setLevel(logging.DEBUG)
 url = urlparse.urlparse(os.environ['REDIS_URL'])
 rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
 
-# Last updated 4/21/2014 asdfa
+# Last updated by M. Fink
 def currencies(db=[]):
     if not db:
         with open("currencies.dat", 'r') as f:
@@ -81,6 +81,26 @@ def get_rate(src, dst):
 @route('/static/:filename')
 def serve_static(filename):
     return bottle.static_file(filename, root=STATIC_ROOT)
+
+@route('/login')
+def login():
+    return '''
+        <form action="/login" method="post">
+            Username: <input name="username" type="text" />
+            Password: <input name="password" type="password" />
+            <input value="Login" type="submit" />
+        </form>
+    '''
+
+@route('/login', method='POST')
+def do_login():
+    username = request.forms.get('username')
+    password = request.forms.get('password')
+    if username == 'josh':
+        return "<p>Welcome, Josh.</p>" \
+               "<p><a href='doctor'>Find a Doctor</a></p>"
+    else:
+        return "<p>Login failed.</p>"
 
 application = bottle.app()
 application.catchall = False
