@@ -11,6 +11,15 @@
     vertical-align: middle;
 }
   </style>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  </script>
 </head>
 <body>
 <div class="container">
@@ -27,8 +36,8 @@ Distance: 1.9 mi<br>
 <label for="regularTextarea">Reason for Visit</label>
 <textarea id="regularTextarea"></textarea>
 <label for="regularInput">Date</label>
-<input name="username" type="text" id="regularInput" />
-<label for="selectList">Time</label>
+<input id="datepicker" />
+<label for="selectList">Available Openings</label>
 <select id="selectList">
 <option value="Option 1">8:00 a.m.</option>
 <option value="Option 2">12:30 p.m.</option>
