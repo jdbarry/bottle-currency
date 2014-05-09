@@ -115,7 +115,7 @@ def schedule():
 @route('/schedule', method='POST')
 def do_schedule():
     try:
-        urllib2.urlopen(url)
+        urllib2.urlopen(SERVICE_URL)
     except urllib2.URLError:
         log.exception("url error")
         raise ConnectionError("Can't connect upstream server")
@@ -124,7 +124,6 @@ def do_schedule():
         raise ConnectionError("Can't communicate upstream server")
     else:
         return "<p>Reservation successful! [add details here]</p>"
-
 
 application = bottle.app()
 application.catchall = False
