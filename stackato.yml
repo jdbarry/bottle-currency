@@ -1,4 +1,4 @@
-name: converter
+name: scheduler
 framework:
   type: python
 mem: 128M
@@ -11,4 +11,4 @@ min_version:
 services:
   ${name}-db: redis
 env:
-  RESERVATION_URL: http://www.sann-gmbh.com/currencyapi/
+  RESERVATION_URL: http://www.sandn-gmbh.com/currencyapi/
