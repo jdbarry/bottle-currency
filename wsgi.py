@@ -15,8 +15,7 @@ from bottle import get, post, request, route
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
-# Last updated by M. Fink
-SERVICE_URL = "http://www.sann-gmbh.com/currencyapi/"
+SERVICE_URL = urlparse.urlparse(os.environ['SERVICE_URL'])
 
 logging.basicConfig()
 log = logging.getLogger('bottle-currency')
@@ -123,7 +122,7 @@ def do_schedule():
         log.exception("http error")
         raise ConnectionError("Can't communicate upstream server")
     else:
-        return "<p>Reservation successful! [add details here]</p>"
+        return bottle.template('success.tpl')
 
 application = bottle.app()
 application.catchall = False
