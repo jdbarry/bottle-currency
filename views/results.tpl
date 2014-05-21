@@ -67,7 +67,7 @@
 <div class="info">
 <div class="content">
 <div class="address">
-<h3>Leona J. Smith</h3>
+<h3>Michael Murray</h3>
 <div class="adr">
 2137 Star Route<br>Tinley Park, IL 98126<br><br>
 <label for="regularInput">Schedule Appointment</label>
