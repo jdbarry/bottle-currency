@@ -15,7 +15,7 @@ from bottle import get, post, request, route
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
-community_service_url = urllib2.Request(os.environ['COMMUNITY_SERVICE_URL'])
+reservation_url = os.environ.get("RESERVATION_URL",'localhost')
 
 logging.basicConfig()
 log = logging.getLogger('bottle-currency')
@@ -114,7 +114,7 @@ def schedule():
 @route('/schedule', method='POST')
 def do_schedule():
     try:
-        urllib2.urlopen(community_service_url)
+        urllib2.urlopen(reservation_url)
     except urllib2.URLError:
         log.exception("url error")
         raise ConnectionError("Can't connect upstream server")
@@ -129,4 +129,3 @@ application.catchall = False
 
 if os.getenv('SELFHOST', False):
     bottle.run(application)
-
