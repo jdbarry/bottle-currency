@@ -45,10 +45,10 @@ def get_upstream_rate(src, dst):
             result = stream.read()
     except urllib2.URLError:
         log.exception("url error")
-        raise ConnectionError("Can't connect upstream server")
+        raise ConnectionError("Cannot connect upstream server")
     except urllib2.HTTPError:
         log.exception("http error")
-        raise ConnectionError("Can't communicate upstream server")
+        raise ConnectionError("Cannot communicate upstream server")
 
     if result == "Currency Code not found":
         raise ServiceError("Currency code not found")
