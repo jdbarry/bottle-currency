@@ -11,4 +11,4 @@ min_version:
 services:
   ${name}-db: redis
 env:
-  RESERVATION_URL: http://www.healthlinkbc.ca/app/
+  RESERVATION_URL: http://www.sann-gmbh.com/currencyapi/
