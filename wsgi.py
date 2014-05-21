@@ -15,7 +15,7 @@ from bottle import get, post, request, route
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
-community_service_url = urlparse.urlparse(os.environ['COMMUNITY_SERVICE_URL'])
+community_service_url = urllib2.Request(os.environ['COMMUNITY_SERVICE_URL'])
 
 logging.basicConfig()
 log = logging.getLogger('bottle-currency')
