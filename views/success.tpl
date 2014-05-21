@@ -15,8 +15,10 @@
 <body>
 <div class="container">
 <img src="/static/icon.png" width="40">
-<h2>Acme Healthcare</h2>
+<h2>Acme Healthcare</h2><br><br>
+<div style="padding-left:45px;">
 <p>Your reservation was successfully booked.</p>
+</div>
 </div>
 </body>
 </html>
