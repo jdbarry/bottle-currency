@@ -10,6 +10,14 @@ min_version:
   client: 1.4.3
 services:
   cache-db: redis
+autoscale:
+  enabled: true
+  instances:
+    min: 1
+    max: 4
+  cpu:
+    min: 30
+    max: 85
 env:
   RESERVATION_URL: localhost
 # RESERVATION_URL: http://scheduler.acmehealthco.com/
