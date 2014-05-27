@@ -11,5 +11,5 @@ min_version:
 services:
   cache-db: redis
 env:
-# RESERVATION_URL: localhost
-  RESERVATION_URL: http://scheduler.acmehealthco.com/
+  RESERVATION_URL: localhost
+# RESERVATION_URL: http://scheduler.acmehealthco.com/
