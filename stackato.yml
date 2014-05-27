@@ -20,4 +20,4 @@ autoscale:
     max: 85
 env:
   RESERVATION_URL: localhost
-# RESERVATION_URL: http://scheduler.acmehealthco.com/
+# RESERVATION_URL: http://scheduler.acmehealthco.com
