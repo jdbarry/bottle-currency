@@ -117,10 +117,12 @@ def do_schedule():
         urllib2.urlopen(reservation_url)
     except urllib2.URLError:
         log.exception("url error")
-        raise ConnectionError("Can't connect upstream server")
+        raise ConnectionError("Can't connect to the upstream server")
+        return bottle.template('error.tpl')
     except urllib2.HTTPError:
         log.exception("http error")
-        raise ConnectionError("Can't communicate upstream server")
+        raise ConnectionError("Can't connect to the upstream server")
+        return bottle.template('error.tpl')
     else:
         return bottle.template('success.tpl')
 
