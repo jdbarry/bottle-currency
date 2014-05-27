@@ -1,26 +1,10 @@
-# Currency Converter
-
-## Purpose
-
-Currency Converter is a web app for converting currencies. 
+# Healthcare Scheduler Demo
 
 ## Technology Stack
 
  * ActivePython - http://www.activestate.com/activepython
  * Bottle web framework - http://bottlepy.org/
  * Redis NoSQL database - http://redis.io/
-
-The app uses Foxrate XML-RPC API to obtain actual currency
-exchange rates. The data is retained in the local Redis 
-database for 3 hours.
-
-## Usage
-
-### Deploy on Stackato
-
-    $ git clone git://github.com/Stackato-Apps/bottle-currency.git
-    $ cd bottle-currency
-    $ stackato push -n
 
 Then open application in a browser.
 
