@@ -20,4 +20,4 @@ autoscale:
     max: 85
 env:
   RESERVATION_URL: https://dev.hcpartnernet.com/
-# RESERVATION_URL: https://scheduler.acmehealthco.com/
+#RESERVATION_URL: https://scheduler.acmehealthco.com/
