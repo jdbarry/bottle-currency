@@ -89,7 +89,7 @@ def login():
 def do_login():
     username = request.forms.get('username')
     password = request.forms.get('password')
-    if username == 'billh':
+    if username == 'joshb':
         return bottle.template('authenticated')
     else:
         return "<p>Login failed</p>"

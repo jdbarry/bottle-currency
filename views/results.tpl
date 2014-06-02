@@ -25,7 +25,7 @@
 <div class="address">
 <h3>Leona J. Smith</h3>
 <div class="adr">
-2137 Star Route<br>Tinley Park, IL 98126<br><br>
+2137 Star Route<br>West Seattle, WA 98126<br><br>
 <a href="/schedule" class="button">Schedule an Appointment</a>
 <a href="/map" class="button">Map & Directions</a>
 <a href="/call" class="button">Call</a>
@@ -37,9 +37,9 @@
 <div class="info">
 <div class="content">
 <div class="address">
-<h3>Leona J. Smith</h3>
+<h3>John Wilson</h3>
 <div class="adr">
-2137 Star Route<br>Tinley Park, IL 98126<br><br>
+300 Box Road<br>West Seattle, WA 98126<br><br>
 <a href="/schedule" class="button">Schedule an Appointment</a>
 <a href="/map" class="button">Map & Directions</a>
 <a href="/call" class="button">Call</a>
@@ -51,10 +51,9 @@
 <div class="info">
 <div class="content">
 <div class="address">
-<h3>Leona J. Smith</h3>
+<h3>Michael Bradley</h3>
 <div class="adr">
-2137 Star Route<br>Tinley Park, IL 98126<br><br>
-<label for="regularInput">Schedule Appointment</label>
+2137 Star Route<br>West Seattle, WA 98126<br><br>
 <a href="/schedule" class="button">Schedule an Appointment</a>
 <a href="/map" class="button">Map & Directions</a>
 <a href="/call" class="button">Call</a>
@@ -67,10 +66,9 @@
 <div class="info">
 <div class="content">
 <div class="address">
-<h3>Michael Murray</h3>
+<h3>Kennedy Johnson</h3>
 <div class="adr">
-2137 Star Route<br>Tinley Park, IL 98126<br><br>
-<label for="regularInput">Schedule Appointment</label>
+2342 Western Ave.<br>West Seattle, WA 98126<br><br>
 <a href="/schedule" class="button">Schedule an Appointment</a>
 <a href="/map" class="button">Map & Directions</a>
 <a href="/call" class="button">Call</a>
