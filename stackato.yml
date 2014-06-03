@@ -14,9 +14,9 @@ autoscale:
   enabled: true
   instances:
     min: 1
-    max: 5
+    max: 3
   cpu:
     min: 30
-    max: 85
+    max: 80
 env:
   RESERVATION_URL: https://helion.hpwsportal.com/
