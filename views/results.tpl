@@ -13,9 +13,13 @@
   </style>
 </head>
 <body>
+<div id="top">
+</div>
 <div class="container">
 <img width="40" src="/static/icon.png">
-<h2>Acme Healthcare</h2><br><br>
+<h2>Acme Healthcare</h2>
+<br><br>
+<hr>
 <div style="padding-left:45px;">
 <h3>Results for 98126</h3>
 <br>
@@ -82,5 +86,8 @@
 
 <div class="error"></div>
 </div>
+<hr>
+</div>
+<p style="font-size:x-small" align="middle"><a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a> | <a href="#">Careers</a></p>
 </body>
 </html>

@@ -13,15 +13,20 @@
   </style>
 </head>
 <body>
+<div id="top">
+</div>
 <div class="container">
 <img width="40" src="/static/icon.png">
-<h2>Acme Healthcare</h2><br><br>
+<h2>Acme Healthcare</h2>
+<br><br>
+<hr>
 <div style="padding-left:45px;">
 <a href="/login" class="button">Member Login</a><br>
 <a href="/find" class="button">Find a Doctor</a><br>
 <a href="/shop" class="button">Shop for Coverage</a>
 </div>
-<div class="error"></div>
+<hr>
 </div>
+<p style="font-size:x-small" align="middle"><a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a> | <a href="#">Careers</a></p>
 </body>
 </html>

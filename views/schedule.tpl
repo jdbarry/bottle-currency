@@ -22,9 +22,13 @@
   </script>
 </head>
 <body>
+<div id="top">
+</div>
 <div class="container">
 <img src="/static/icon.png" width="40">
 <h2>Acme Healthcare</h2>
+<br><br>
+<hr>
 <div style="padding-left:45px;">
 <h3>Schedule Appointment</h3>
 <form action="/schedule" method="post">
@@ -47,6 +51,8 @@ Distance: 1.9 mi<br><br>
 <button value="Schedule" type="submit">Book Appointment</button>
 </form>
 </div>
+<hr>
 </div>
+<p style="font-size:x-small" align="middle"><a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a> | <a href="#">Careers</a></p>
 </body>
 </html>

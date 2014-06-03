@@ -13,9 +13,13 @@
   </style>
 </head>
 <body>
+<div id="top">
+</div>
 <div class="container">
 <img src="/static/icon.png" width="40">
 <h2>Acme Healthcare</h2>
+<br><br>
+<hr>
 <div style="padding-left:45px;">
 <h3>Member Login</h3>
 <form action="/login" method="post">
@@ -27,6 +31,8 @@
 <button value="Login" type="submit">Log in</button>
 </form>
 </div>
+<hr>
 </div>
+<p style="font-size:x-small" align="middle"><a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a> | <a href="#">Careers</a></p>
 </body>
 </html>
