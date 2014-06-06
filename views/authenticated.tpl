@@ -20,7 +20,7 @@
 <br><br>
 <hr>
 <div style="padding-left:45px;">
-<h3>Welcome back, Bill!</h3>
+<h3>Welcome back, Josh!</h3>
 <p>Select an option:</p>
 <a href="/find" class="button">Find a Doctor</a><br>
 <a href="/shop" class="button">Shop for Coverage</a><br>
