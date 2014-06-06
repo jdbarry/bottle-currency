@@ -75,7 +75,7 @@ def get_rate(src, dst):
         except:
             log.exception("Unexpected error")
             raise # non-recoverable
-    raise # the 3rd connection error
+    raise # the 3rd connection errorasdf
 
 @route('/static/:filename')
 def serve_static(filename):
@@ -105,7 +105,7 @@ def do_find():
     if zip == '98126':
         return bottle.template('results')
     else:
-        return "<p>No results found. Please try again.</p>"
+        return "<p>No results found, please try again.</p>"
 
 @route('/schedule')
 def schedule():
