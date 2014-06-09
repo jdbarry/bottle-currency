@@ -105,7 +105,7 @@ def do_find():
     if zip == '98126':
         return bottle.template('results')
     else:
-        return "<p>No results found, please try again.</p>"
+        return "<p>No results found, please try again. </p>"
 
 @route('/schedule')
 def schedule():
