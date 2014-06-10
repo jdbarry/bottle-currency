@@ -14,7 +14,7 @@ autoscale:
   enabled: true
   instances:
     min: 1
-    max: 4
+    max: 3
   cpu:
     min: 30
     max: 80
