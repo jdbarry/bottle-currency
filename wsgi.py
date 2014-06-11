@@ -105,7 +105,7 @@ def do_find():
     if zip == '98126':
         return bottle.template('results')
     else:
-        return "<p>No results found, please try again. </p>"
+        return "<p>No results found, please try again! </p>"
 
 @route('/schedule')
 def schedule():
@@ -117,11 +117,11 @@ def do_schedule():
         urllib2.urlopen(reservation_url)
     except urllib2.URLError:
         log.exception("url error")
-        raise ConnectionError("Can't connect to the upstream server.")
+        raise ConnectionError("Can't connect to the upstream server")
         return bottle.template('error.tpl')
     except urllib2.HTTPError:
         log.exception("http error")
-        raise ConnectionError("Can't connect to the upstream server.")
+        raise ConnectionError("Can't connect to the upstream server")
         return bottle.template('error.tpl')
     else:
         return bottle.template('success.tpl')
