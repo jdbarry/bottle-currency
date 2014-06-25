@@ -74,7 +74,7 @@ def get_rate(src, dst):
             time.sleep(1) # recoverable, retry after 1 sec
         except:
             log.exception("Unexpected error")
-            raise # non-recoverable
+            raise # non-recoverableasdf
     raise # the 3rd connection errorasdf
 
 @route('/static/:filename')
