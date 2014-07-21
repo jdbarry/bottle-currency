@@ -34,6 +34,6 @@
 <hr>
 </div>
 <p style="font-size:x-small" align="middle"><a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a> | <a href="#">Careers</a><br>
-<b>Version 1.3 </b></p>
+<b></b></p>
 </body>
 </html>
