@@ -1,5 +1,6 @@
 name: scheduler
-buildpack: https://github.com/ActiveState/stackato-buildpack-python.git
+framework:
+  type: python
 mem: 128M
 requirements:
   pypm:
