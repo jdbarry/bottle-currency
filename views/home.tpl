@@ -28,6 +28,6 @@
 <hr>
 </div>
 <p style="font-size:x-small" align="middle"><a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a> | <a href="#">Careers</a><br>
-<b>Version 1.6</b></p>
+<b>Version 1.4</b></p>
 </body>
 </html>
