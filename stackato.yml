@@ -16,7 +16,7 @@ autoscale:
     min: 1
     max: 6
   cpu:
-    min: 30
+    min: 35
     max: 80
 env:
   RESERVATION_URL: https://helion.hpwsportal.com/

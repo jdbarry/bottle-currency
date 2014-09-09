@@ -92,7 +92,7 @@ def do_login():
     if username == 'joshb':
         return bottle.template('authenticated')
     else:
-        return "<p>Login failed</p>"
+        return "<p>Login failed.</p>"
 
 @route('/find')
 def find():
